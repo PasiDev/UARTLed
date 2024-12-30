@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.16.0"/>
+    <errors>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="30.12.2024">
+            <location file="command.c" line="11"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="30.12.2024">
+            <location file="command.c" line="12"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="30.12.2024">
+            <location file="rgb.c" line="25"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="30.12.2024">
+            <location file="rgb.c" line="26"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &amp;quot;inc/hw_types.h&amp;quot; not found." verbose="Include file: &amp;quot;inc/hw_types.h&amp;quot; not found." sinceDate="30.12.2024">
+            <location file="rgb.c" line="27"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &amp;quot;inc/hw_memmap.h&amp;quot; not found." verbose="Include file: &amp;quot;inc/hw_memmap.h&amp;quot; not found." sinceDate="30.12.2024">
+            <location file="rgb.c" line="28"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &amp;quot;inc/hw_timer.h&amp;quot; not found." verbose="Include file: &amp;quot;inc/hw_timer.h&amp;quot; not found." sinceDate="30.12.2024">
+            <location file="rgb.c" line="29"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &amp;quot;inc/hw_ints.h&amp;quot; not found." verbose="Include file: &amp;quot;inc/hw_ints.h&amp;quot; not found." sinceDate="30.12.2024">
+            <location file="rgb.c" line="30"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &amp;quot;driverlib/sysctl.h&amp;quot; not found." verbose="Include file: &amp;quot;driverlib/sysctl.h&amp;quot; not found." sinceDate="30.12.2024">
+            <location file="rgb.c" line="31"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &amp;quot;driverlib/rom.h&amp;quot; not found." verbose="Include file: &amp;quot;driverlib/rom.h&amp;quot; not found." sinceDate="30.12.2024">
+            <location file="rgb.c" line="32"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &amp;quot;driverlib/pin_map.h&amp;quot; not found." verbose="Include file: &amp;quot;driverlib/pin_map.h&amp;quot; not found." sinceDate="30.12.2024">
+            <location file="rgb.c" line="33"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &amp;quot;driverlib/timer.h&amp;quot; not found." verbose="Include file: &amp;quot;driverlib/timer.h&amp;quot; not found." sinceDate="30.12.2024">
+            <location file="rgb.c" line="34"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &amp;quot;driverlib/gpio.h&amp;quot; not found." verbose="Include file: &amp;quot;driverlib/gpio.h&amp;quot; not found." sinceDate="30.12.2024">
+            <location file="rgb.c" line="35"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &amp;quot;driverlib/interrupt.h&amp;quot; not found." verbose="Include file: &amp;quot;driverlib/interrupt.h&amp;quot; not found." sinceDate="30.12.2024">
+            <location file="rgb.c" line="36"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;RGBBlinkIntHandler&amp;#039; is never used." verbose="The function &amp;#039;RGBBlinkIntHandler&amp;#039; is never used." cwe="561" sinceDate="30.12.2024">
+            <location file="rgb.c" line="82"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="30.12.2024">
+            <location file="startup_ccs.c" line="25"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &amp;quot;inc/hw_nvic.h&amp;quot; not found." verbose="Include file: &amp;quot;inc/hw_nvic.h&amp;quot; not found." sinceDate="30.12.2024">
+            <location file="startup_ccs.c" line="26"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &amp;quot;inc/hw_types.h&amp;quot; not found." verbose="Include file: &amp;quot;inc/hw_types.h&amp;quot; not found." sinceDate="30.12.2024">
+            <location file="startup_ccs.c" line="27"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="30.12.2024">
+            <location file="uartfuncs.c" line="11"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="30.12.2024">
+            <location file="uartfuncs.c" line="12"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &amp;quot;inc/hw_memmap.h&amp;quot; not found." verbose="Include file: &amp;quot;inc/hw_memmap.h&amp;quot; not found." sinceDate="30.12.2024">
+            <location file="uartfuncs.c" line="13"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &amp;quot;inc/hw_types.h&amp;quot; not found." verbose="Include file: &amp;quot;inc/hw_types.h&amp;quot; not found." sinceDate="30.12.2024">
+            <location file="uartfuncs.c" line="14"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &amp;quot;inc/hw_gpio.h&amp;quot; not found." verbose="Include file: &amp;quot;inc/hw_gpio.h&amp;quot; not found." sinceDate="30.12.2024">
+            <location file="uartfuncs.c" line="15"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &amp;quot;driverlib/uart.h&amp;quot; not found." verbose="Include file: &amp;quot;driverlib/uart.h&amp;quot; not found." sinceDate="30.12.2024">
+            <location file="uartfuncs.c" line="16"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdint.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="30.12.2024">
+            <location file="uartled.c" line="11"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;stdbool.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="30.12.2024">
+            <location file="uartled.c" line="12"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &amp;quot;inc/hw_memmap.h&amp;quot; not found." verbose="Include file: &amp;quot;inc/hw_memmap.h&amp;quot; not found." sinceDate="30.12.2024">
+            <location file="uartled.c" line="13"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &amp;quot;inc/hw_types.h&amp;quot; not found." verbose="Include file: &amp;quot;inc/hw_types.h&amp;quot; not found." sinceDate="30.12.2024">
+            <location file="uartled.c" line="14"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &amp;quot;inc/hw_gpio.h&amp;quot; not found." verbose="Include file: &amp;quot;inc/hw_gpio.h&amp;quot; not found." sinceDate="30.12.2024">
+            <location file="uartled.c" line="15"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &amp;quot;driverlib/debug.h&amp;quot; not found." verbose="Include file: &amp;quot;driverlib/debug.h&amp;quot; not found." sinceDate="30.12.2024">
+            <location file="uartled.c" line="16"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &amp;quot;driverlib/fpu.h&amp;quot; not found." verbose="Include file: &amp;quot;driverlib/fpu.h&amp;quot; not found." sinceDate="30.12.2024">
+            <location file="uartled.c" line="17"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &amp;quot;driverlib/gpio.h&amp;quot; not found." verbose="Include file: &amp;quot;driverlib/gpio.h&amp;quot; not found." sinceDate="30.12.2024">
+            <location file="uartled.c" line="18"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &amp;quot;driverlib/pin_map.h&amp;quot; not found." verbose="Include file: &amp;quot;driverlib/pin_map.h&amp;quot; not found." sinceDate="30.12.2024">
+            <location file="uartled.c" line="19"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &amp;quot;driverlib/rom.h&amp;quot; not found." verbose="Include file: &amp;quot;driverlib/rom.h&amp;quot; not found." sinceDate="30.12.2024">
+            <location file="uartled.c" line="20"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &amp;quot;driverlib/sysctl.h&amp;quot; not found." verbose="Include file: &amp;quot;driverlib/sysctl.h&amp;quot; not found." sinceDate="30.12.2024">
+            <location file="uartled.c" line="21"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &amp;quot;driverlib/uart.h&amp;quot; not found." verbose="Include file: &amp;quot;driverlib/uart.h&amp;quot; not found." sinceDate="30.12.2024">
+            <location file="uartled.c" line="22"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &amp;quot;driverlib/rom_map.h&amp;quot; not found." verbose="Include file: &amp;quot;driverlib/rom_map.h&amp;quot; not found." sinceDate="30.12.2024">
+            <location file="uartled.c" line="23"/>
+        </error>
+    </errors>
+</results>

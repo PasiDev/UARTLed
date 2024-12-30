@@ -1,0 +1,4 @@
+ResetISR call:[asm] noreturn:[asm]
+NmiSR
+FaultISR
+IntDefaultHandler

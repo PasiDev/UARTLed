@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="7780239219204399744">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="command.c" line="11" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="command.c" line="12" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="rgb.h:120:13" call-funcname="RGBSet" call-argnr="1" file="command.c" line="55" col="13" call-argexpr="pui32RGBColor" call-argvaluetype="7" call-argvalue="12"/><function-call call-id="rgb.h:125:13" call-funcname="RGBColorGet" call-argnr="1" file="command.c" line="62" col="14" call-argexpr="pui32RGBColor" call-argvaluetype="7" call-argvalue="12"/><function-call call-id="uartfuncs.h:24:6" call-funcname="SendGetResponse" call-argnr="1" file="command.c" line="67" col="18" call-argexpr="pui32RGBColor" call-argvaluetype="7" call-argvalue="12"/>  </FileInfo>
+  <FileInfo check="Bounds checking">
+    <array-index>
+    <unsafe-usage my-id="command.h:67:9" my-argnr="1" my-argname="CMDBuffer" file="command.c" line="32" col="5" value="4"/>
+    </array-index>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="command.h:67:9" my-argnr="1" my-argname="CMDBuffer" file="command.c" line="32" col="5" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="command.h:67:9" my-argnr="1" my-argname="CMDBuffer" file="command.c" line="32" col="5" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="command.c" functionName="CommandExe" lineNumber="27"/>
+    <functioncall functionName="RGBColorGet"/>
+    <functioncall functionName="RGBSet"/>
+    <functioncall functionName="SendGetResponse"/>
+    <functioncall functionName="SendSetResponse"/>
+  </FileInfo>
+</analyzerinfo>

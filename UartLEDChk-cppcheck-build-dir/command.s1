@@ -1,0 +1,1 @@
+CommandExe call:[RGBColorGet,RGBSet,SendGetResponse,SendSetResponse,return] noreturn:[RGBSet,SendGetResponse,SendSetResponse,return]

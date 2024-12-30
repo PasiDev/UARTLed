@@ -1,0 +1,5 @@
+command.a1::command.c
+rgb.a1::rgb.c
+startup_ccs.a1::startup_ccs.c
+uartfuncs.a1::uartfuncs.c
+uartled.a1::uartled.c

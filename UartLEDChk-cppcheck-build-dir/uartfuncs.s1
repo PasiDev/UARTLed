@@ -1,0 +1,4 @@
+ReadFrame call:[UARTCharGet,return,while] noreturn:[UARTCharGet,return]
+SendSetResponse call:[SendPayload] noreturn:[SendPayload]
+SendGetResponse call:[SendPayload] noreturn:[SendPayload]
+SendPayload call:[UARTCharPut,while] noreturn:[UARTCharPut,while]

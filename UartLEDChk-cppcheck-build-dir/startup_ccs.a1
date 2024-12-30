@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="5004251426879107500">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="startup_ccs.c" line="25" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;inc/hw_nvic.h&quot; not found." verbose="Include file: &quot;inc/hw_nvic.h&quot; not found.">
+            <location file="startup_ccs.c" line="26" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;inc/hw_types.h&quot; not found." verbose="Include file: &quot;inc/hw_types.h&quot; not found.">
+            <location file="startup_ccs.c" line="27" column="0"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="startup_ccs.c" functionName="ResetISR" lineNumber="240"/>
+    <functiondecl file="startup_ccs.c" functionName="NmiSR" lineNumber="258"/>
+    <functiondecl file="startup_ccs.c" functionName="FaultISR" lineNumber="276"/>
+    <functiondecl file="startup_ccs.c" functionName="IntDefaultHandler" lineNumber="294"/>
+    <functioncall functionName="FaultISR"/>
+    <functioncall functionName="IntDefaultHandler"/>
+    <functioncall functionName="NmiSR"/>
+    <functioncall functionName="ResetISR"/>
+  </FileInfo>
+</analyzerinfo>

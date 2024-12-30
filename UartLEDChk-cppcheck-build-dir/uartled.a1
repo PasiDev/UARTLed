@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="7860249270879865632">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="uartled.c" line="11" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="uartled.c" line="12" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;inc/hw_memmap.h&quot; not found." verbose="Include file: &quot;inc/hw_memmap.h&quot; not found.">
+            <location file="uartled.c" line="13" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;inc/hw_types.h&quot; not found." verbose="Include file: &quot;inc/hw_types.h&quot; not found.">
+            <location file="uartled.c" line="14" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;inc/hw_gpio.h&quot; not found." verbose="Include file: &quot;inc/hw_gpio.h&quot; not found.">
+            <location file="uartled.c" line="15" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;driverlib/debug.h&quot; not found." verbose="Include file: &quot;driverlib/debug.h&quot; not found.">
+            <location file="uartled.c" line="16" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;driverlib/fpu.h&quot; not found." verbose="Include file: &quot;driverlib/fpu.h&quot; not found.">
+            <location file="uartled.c" line="17" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;driverlib/gpio.h&quot; not found." verbose="Include file: &quot;driverlib/gpio.h&quot; not found.">
+            <location file="uartled.c" line="18" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;driverlib/pin_map.h&quot; not found." verbose="Include file: &quot;driverlib/pin_map.h&quot; not found.">
+            <location file="uartled.c" line="19" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;driverlib/rom.h&quot; not found." verbose="Include file: &quot;driverlib/rom.h&quot; not found.">
+            <location file="uartled.c" line="20" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;driverlib/sysctl.h&quot; not found." verbose="Include file: &quot;driverlib/sysctl.h&quot; not found.">
+            <location file="uartled.c" line="21" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;driverlib/uart.h&quot; not found." verbose="Include file: &quot;driverlib/uart.h&quot; not found.">
+            <location file="uartled.c" line="22" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;driverlib/rom_map.h&quot; not found." verbose="Include file: &quot;driverlib/rom_map.h&quot; not found.">
+            <location file="uartled.c" line="23" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="rgb.h:120:13" call-funcname="RGBSet" call-argnr="1" file="uartled.c" line="50" col="11" call-argexpr="pui32RGBColor" call-argvaluetype="7" call-argvalue="12"/><function-call call-id="uartfuncs.h:22:9" call-funcname="ReadFrame" call-argnr="1" file="uartled.c" line="74" col="27" call-argexpr="CommandBuffer" call-argvaluetype="7" call-argvalue="400"/><function-call call-id="command.h:67:9" call-funcname="CommandExe" call-argnr="1" file="uartled.c" line="77" col="16" call-argexpr="CommandBuffer" call-argvaluetype="7" call-argvalue="400"/>  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="uartled.c" functionName="main" lineNumber="34"/>
+    <functioncall functionName="CommandExe"/>
+    <functioncall functionName="GPIO_PB0_U1RX"/>
+    <functioncall functionName="GPIO_PB1_U1TX"/>
+    <functioncall functionName="GPIO_PIN_1"/>
+    <functioncall functionName="GPIO_PORTB_BASE"/>
+    <functioncall functionName="RGBInit"/>
+    <functioncall functionName="RGBSet"/>
+    <functioncall functionName="ROM_FPUEnable"/>
+    <functioncall functionName="ROM_GPIOPinConfigure"/>
+    <functioncall functionName="ROM_GPIOPinTypeUART"/>
+    <functioncall functionName="ROM_IntMasterEnable"/>
+    <functioncall functionName="ROM_SysCtlClockGet"/>
+    <functioncall functionName="ROM_SysCtlClockSet"/>
+    <functioncall functionName="ROM_SysCtlPeripheralEnable"/>
+    <functioncall functionName="ROM_UARTConfigSetExpClk"/>
+    <functioncall functionName="ReadFrame"/>
+    <functioncall functionName="SYSCTL_PERIPH_GPIOB"/>
+    <functioncall functionName="SYSCTL_PERIPH_UART1"/>
+    <functioncall functionName="SYSCTL_XTAL_16MHZ"/>
+    <functioncall functionName="UART1_BASE"/>
+    <functioncall functionName="UART_CONFIG_PAR_NONE"/>
+  </FileInfo>
+</analyzerinfo>

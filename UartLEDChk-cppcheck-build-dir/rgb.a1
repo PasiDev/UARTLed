@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="9668449571750018219">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="rgb.c" line="25" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="rgb.c" line="26" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;inc/hw_types.h&quot; not found." verbose="Include file: &quot;inc/hw_types.h&quot; not found.">
+            <location file="rgb.c" line="27" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;inc/hw_memmap.h&quot; not found." verbose="Include file: &quot;inc/hw_memmap.h&quot; not found.">
+            <location file="rgb.c" line="28" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;inc/hw_timer.h&quot; not found." verbose="Include file: &quot;inc/hw_timer.h&quot; not found.">
+            <location file="rgb.c" line="29" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;inc/hw_ints.h&quot; not found." verbose="Include file: &quot;inc/hw_ints.h&quot; not found.">
+            <location file="rgb.c" line="30" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;driverlib/sysctl.h&quot; not found." verbose="Include file: &quot;driverlib/sysctl.h&quot; not found.">
+            <location file="rgb.c" line="31" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;driverlib/rom.h&quot; not found." verbose="Include file: &quot;driverlib/rom.h&quot; not found.">
+            <location file="rgb.c" line="32" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;driverlib/pin_map.h&quot; not found." verbose="Include file: &quot;driverlib/pin_map.h&quot; not found.">
+            <location file="rgb.c" line="33" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;driverlib/timer.h&quot; not found." verbose="Include file: &quot;driverlib/timer.h&quot; not found.">
+            <location file="rgb.c" line="34" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;driverlib/gpio.h&quot; not found." verbose="Include file: &quot;driverlib/gpio.h&quot; not found.">
+            <location file="rgb.c" line="35" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;driverlib/interrupt.h&quot; not found." verbose="Include file: &quot;driverlib/interrupt.h&quot; not found.">
+            <location file="rgb.c" line="36" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="rgb.h:121:13" call-funcname="RGBColorSet" call-argnr="1" file="rgb.c" line="328" col="16" call-argexpr="g_ui32Colors" call-argvaluetype="7" call-argvalue="12"/><function-call call-id="rgb.h:121:13" call-funcname="RGBColorSet" call-argnr="1" file="rgb.c" line="269" col="5" my-id="rgb.h:120:13" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="rgb.c" functionName="RGBBlinkIntHandler" lineNumber="82"/>
+    <functioncall functionName="GPIO_PF1_T0CCP1"/>
+    <functioncall functionName="GPIO_PF2_T1CCP0"/>
+    <functioncall functionName="GPIO_PF3_T1CCP1"/>
+    <functioncall functionName="GPIO_PIN_1"/>
+    <functioncall functionName="GPIO_PIN_2"/>
+    <functioncall functionName="GPIO_PIN_3"/>
+    <functioncall functionName="GPIO_PIN_TYPE_STD"/>
+    <functioncall functionName="GPIO_PORTF_BASE"/>
+    <functioncall functionName="GPIO_STRENGTH_8MA_SC"/>
+    <functioncall functionName="HWREG"/>
+    <functioncall functionName="INT_WTIMER5B"/>
+    <functioncall functionName="RGBColorSet"/>
+    <functioncall functionName="RGBDisable"/>
+    <functioncall functionName="RGBEnable"/>
+    <functioncall functionName="RGBIntensitySet"/>
+    <functioncall functionName="ROM_GPIOPadConfigSet"/>
+    <functioncall functionName="ROM_GPIOPinConfigure"/>
+    <functioncall functionName="ROM_GPIOPinTypeGPIOInput"/>
+    <functioncall functionName="ROM_GPIOPinTypeTimer"/>
+    <functioncall functionName="ROM_IntEnable"/>
+    <functioncall functionName="ROM_SysCtlPeripheralEnable"/>
+    <functioncall functionName="ROM_TimerConfigure"/>
+    <functioncall functionName="ROM_TimerDisable"/>
+    <functioncall functionName="ROM_TimerEnable"/>
+    <functioncall functionName="ROM_TimerIntClear"/>
+    <functioncall functionName="ROM_TimerIntEnable"/>
+    <functioncall functionName="ROM_TimerLoadSet"/>
+    <functioncall functionName="ROM_TimerLoadSet64"/>
+    <functioncall functionName="ROM_TimerMatchSet"/>
+    <functioncall functionName="SYSCTL_PERIPH_GPIOF"/>
+    <functioncall functionName="SYSCTL_PERIPH_TIMER0"/>
+    <functioncall functionName="SYSCTL_PERIPH_TIMER1"/>
+    <functioncall functionName="SYSCTL_PERIPH_WTIMER5"/>
+    <functioncall functionName="SysCtlClockGet"/>
+    <functioncall functionName="TIMER0_BASE"/>
+    <functioncall functionName="TIMER1_BASE"/>
+    <functioncall functionName="TIMER_A"/>
+    <functioncall functionName="TIMER_B"/>
+    <functioncall functionName="TIMER_BOTH"/>
+    <functioncall functionName="TIMER_CFG_SPLIT_PAIR"/>
+    <functioncall functionName="TIMER_O_CFG"/>
+    <functioncall functionName="TIMER_O_CTL"/>
+    <functioncall functionName="TIMER_O_TAILR"/>
+    <functioncall functionName="TIMER_O_TAMR"/>
+    <functioncall functionName="TIMER_O_TBILR"/>
+    <functioncall functionName="TIMER_O_TBMR"/>
+    <functioncall functionName="TIMER_TIMB_TIMEOUT"/>
+    <functioncall functionName="WTIMER5_BASE"/>
+  </FileInfo>
+</analyzerinfo>
